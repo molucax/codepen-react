@@ -4,9 +4,9 @@ import useLocalStorage from "../hooks/useLocalStorage";
 
 function App() {
 
-  const [html, setHtml] = useLocalStorage("html", "<h1>Hey there :)</h1>");
-  const [css, setCss] = useLocalStorage("css", "body { color: white; }");
-  const [js, setJs] = useLocalStorage("js", "document.body.style.background = 'black'");
+  const [html, setHtml] = useLocalStorage("html", "<h1>Hey :)</h1>");
+  const [css, setCss] = useLocalStorage("css", "body { color: black; }");
+  const [js, setJs] = useLocalStorage("js", "document.body.style.background = 'lightgrey'");
   const [srcDoc, setSrcDoc] = useState("");
 
   useEffect(() => {
